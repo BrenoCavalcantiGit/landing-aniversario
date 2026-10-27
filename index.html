@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa de Aniversário | Evento</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="container topo__conteudo">
+            <img class="topo__logo" src="images/ebac_logo.svg" alt="Logo EBAC">
+            <nav class="menu">
+                <a class="menu__link" href="#detalhes">Detalhes</a>
+                <a class="menu__link" href="#programacao">Programação</a>
+                <a class="menu__link" href="#confirmar">Confirmar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__conteudo">
+                <p class="hero__etiqueta">Você está convidado!</p>
+                <h1 class="hero__titulo">Aniversário do BRENO</h1>
+                <p class="hero__texto">Uma noite com amigos, boa comida e muita tecnologia. Venha comemorar comigo!</p>
+
+                <div class="contador" id="contador">
+                    <div class="contador__item">
+                        <span class="contador__numero" id="dias">00</span>
+                        <span class="contador__legenda">dias</span>
+                    </div>
+                    <div class="contador__item">
+                        <span class="contador__numero" id="horas">00</span>
+                        <span class="contador__legenda">horas</span>
+                    </div>
+                    <div class="contador__item">
+                        <span class="contador__numero" id="minutos">00</span>
+                        <span class="contador__legenda">min</span>
+                    </div>
+                    <div class="contador__item">
+                        <span class="contador__numero" id="segundos">00</span>
+                        <span class="contador__legenda">seg</span>
+                    </div>
+                </div>
+
+                <a class="botao" href="#confirmar">Confirmar presença</a>
+            </div>
+        </section>
+
+        <section class="secao" id="detalhes">
+            <div class="container">
+                <h2 class="secao__titulo">Detalhes do evento</h2>
+                <div class="detalhes">
+                    <div class="detalhes__card" data-aos="fade-up">
+                        <h3 class="detalhes__titulo">Data</h3>
+                        <p class="detalhes__texto" id="data-texto">00 de mês</p>
+                    </div>
+                    <div class="detalhes__card" data-aos="fade-up">
+                        <h3 class="detalhes__titulo">Horário</h3>
+                        <p class="detalhes__texto">A partir das 19h</p>
+                    </div>
+                    <div class="detalhes__card" data-aos="fade-up">
+                        <h3 class="detalhes__titulo">Local</h3>
+                        <p class="detalhes__texto">Rua Exemplo, 123 - São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao--escura" id="programacao">
+            <div class="container">
+                <h2 class="secao__titulo">Programação</h2>
+                <div class="programacao">
+                    <article class="atracao" data-aos="zoom-in">
+                        <img class="atracao__imagem" src="images/frontend.png" alt="Ilustração de front-end">
+                        <h3 class="atracao__titulo">19h - Recepção</h3>
+                        <p class="atracao__texto">Chegada dos convidados e bebidas de boas-vindas.</p>
+                    </article>
+                    <article class="atracao" data-aos="zoom-in">
+                        <img class="atracao__imagem" src="images/backend.png" alt="Ilustração de back-end">
+                        <h3 class="atracao__titulo">20h - Jantar</h3>
+                        <p class="atracao__texto">Buffet completo com opções para todos os gostos.</p>
+                    </article>
+                    <article class="atracao" data-aos="zoom-in">
+                        <img class="atracao__imagem" src="images/ui-ux.png" alt="Ilustração de UI/UX">
+                        <h3 class="atracao__titulo">21h30 - Parabéns</h3>
+                        <p class="atracao__texto">Hora do bolo, fotos e muita comemoração.</p>
+                    </article>
+                    <article class="atracao" data-aos="zoom-in">
+                        <img class="atracao__imagem" src="images/data.png" alt="Ilustração de dados">
+                        <h3 class="atracao__titulo">22h - Festa</h3>
+                        <p class="atracao__texto">Música, dança e diversão até o fim da noite.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao confirmar" id="confirmar">
+            <div class="container">
+                <h2 class="secao__titulo">Vai comigo?</h2>
+                <p class="confirmar__texto">Confirme sua presença pelo WhatsApp até uma semana antes da festa.</p>
+                <a class="botao" href="https://wa.me/5511999999999?text=Oi!%20Confirmo%20presen%C3%A7a%20na%20sua%20festa!" target="_blank" rel="noopener">Confirmar no WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Feito para o exercício do módulo 22 - EBAC</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
